@@ -13,6 +13,12 @@ class Version {
 
 
     static dependencies = [
+            test     : [
+                    java_junit: "junit:junit:4.12",
+                    junit     : "androidx.test.ext:junit:1.1.1",
+                    espresso  : "androidx.test.espresso:espresso-core:3.2.0",
+            ],
+
             androidX : [
                     appcompat       : "androidx.appcompat:appcompat:1.1.0",
                     constraintlayout: "androidx.constraintlayout:constraintlayout:1.1.3",
@@ -23,13 +29,10 @@ class Version {
                     extensions: "androidx.lifecycle:lifecycle-extensions:2.1.0"
             ],
 
-            kotlin   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            material : "com.google.android.material:material:1.0.0",
 
-            test     : [
-                    java_junit: "junit:junit:4.12",
-                    junit     : "androidx.test.ext:junit:1.1.1",
-                    espresso  : "androidx.test.espresso:espresso-core:3.2.0",
-            ]
+            kotlin   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     ]
 
     static addRepos(RepositoryHandler handler) {

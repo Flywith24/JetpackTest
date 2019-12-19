@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation config.test.espresso
 
     implementation config.lifecycle.extensions
+    implementation config.material
 }
