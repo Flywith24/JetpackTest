@@ -1,3 +1,5 @@
+import org.gradle.api.artifacts.dsl.RepositoryHandler
+
 class Version {
 
     static compileSdkVersion = 29
@@ -29,4 +31,9 @@ class Version {
                     espresso  : "androidx.test.espresso:espresso-core:3.2.0",
             ]
     ]
+
+    static addRepos(RepositoryHandler handler) {
+        handler.google()
+        handler.jcenter()
+    }
 }
