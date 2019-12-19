@@ -1,0 +1,2 @@
+include ':viewmodeltest', ':livedatatest'
+rootProject.name='JetpackTest'
