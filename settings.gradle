@@ -1,2 +1,2 @@
-include ':viewmodeltest', ':livedatatest'
+include ':viewmodeltest', ':livedatatest', ':buildSrc'
 rootProject.name='JetpackTest'
