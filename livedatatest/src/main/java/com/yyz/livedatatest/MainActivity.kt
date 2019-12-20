@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.yyz.livedatatest.viewmodel.LiveDataViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var mLiveDataViewModel: LiveDataViewModel

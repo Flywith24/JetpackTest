@@ -1,4 +1,4 @@
-package com.yyz.livedatatest
+package com.yyz.livedatatest.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

@@ -7,9 +7,20 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="ceshi" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_red_point"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/bg_red_point"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
