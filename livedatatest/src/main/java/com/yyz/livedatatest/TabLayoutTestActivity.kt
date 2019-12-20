@@ -70,6 +70,4 @@ class TabLayoutTestActivity : AppCompatActivity() {
 
         override fun getCount(): Int = titles.size
     }
-
-
 }

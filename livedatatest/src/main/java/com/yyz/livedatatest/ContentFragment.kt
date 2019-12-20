@@ -20,7 +20,7 @@ import com.yyz.livedatatest.viewmodel.RedPointViewModel
  * description
  */
 class ContentFragment : Fragment() {
-    lateinit var mRedPointViewModel: RedPointViewModel
+    private lateinit var mRedPointViewModel: RedPointViewModel
     @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
