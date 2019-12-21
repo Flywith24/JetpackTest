@@ -13,6 +13,9 @@ android {
         versionName Version.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        dataBinding{
+            enabled = true
+        }
     }
 
     buildTypes {

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DataBindingTest</string>
+    <string name="todo">TODO</string>
 </resources>
