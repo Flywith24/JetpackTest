@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 
@@ -24,8 +25,10 @@ class DetailFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        view?.findViewById<Button>(R.id.button)?.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_detailFragment_to_homeFragment)
+        if (!arguments?.getString("key").isNullOrBlank()) {
+            view?.findViewById<TextView>(R.id.textView2)?.text = arguments?.getString("key")
         }
+        view?.findViewById<Button>(R.id.button)
+            ?.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_detailFragment_to_homeFragment))
     }
 }
