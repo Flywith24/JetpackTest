@@ -1,4 +1,4 @@
-package com.yyz.dmo_navigation
+package com.yyz.demo_navigation
 
 import org.junit.Test
 
