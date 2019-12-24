@@ -1,2 +1,2 @@
-include ':viewmodeltest', ':livedatatest', ':buildSrc', ':databindingtest'
+include ':viewmodeltest', ':livedatatest', ':buildSrc', ':demo_databinding', ':demo_navigation'
 rootProject.name='JetpackTest'
