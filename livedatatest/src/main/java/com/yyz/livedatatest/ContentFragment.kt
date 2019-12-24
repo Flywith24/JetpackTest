@@ -28,7 +28,8 @@ class ContentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_content, container, false)
-        mRedPointViewModel = ViewModelProviders.of(requireActivity()).get(RedPointViewModel::class.java)
+        mRedPointViewModel =
+            ViewModelProviders.of(requireActivity()).get(RedPointViewModel::class.java)
 
         val textView = view.findViewById<TextView>(R.id.textView).apply {
             text = arguments?.getString(KEY)
@@ -42,7 +43,7 @@ class ContentFragment : Fragment() {
             mRedPointViewModel.redPoint.value = false
         }
         mRedPointViewModel.redPoint.observe(this, Observer {
-            textView.text= "${arguments?.getString(KEY)} $it"
+            textView.text = "${arguments?.getString(KEY)} $it"
         })
         return view
     }
@@ -51,12 +52,11 @@ class ContentFragment : Fragment() {
     companion object {
         const val KEY = "KEY"
 
-        fun newInstance(content: String): Fragment {
-            val fragmet = ContentFragment()
-            val bundle = Bundle()
-            bundle.putString(KEY, content)
-            fragmet.arguments = bundle
-            return fragmet
-        }
+        fun newInstance(content: String): Fragment =
+            ContentFragment().apply {
+                arguments = Bundle().apply {
+                    putString(KEY, content)
+                }
+            }
     }
 }
