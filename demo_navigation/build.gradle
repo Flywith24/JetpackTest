@@ -33,6 +33,8 @@ dependencies {
     implementation config.androidX.core
     implementation config.androidX.constraintlayout
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-plus:16.0.0'
     testImplementation config.test.java_junit
     androidTestImplementation config.test.junit
     androidTestImplementation config.test.espresso
