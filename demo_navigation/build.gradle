@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        applicationId "com.yyz.dmo_navigation"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def config = Version.dependencies
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation config.kotlin
+    implementation config.androidX.appcompat
+    implementation config.androidX.core
+    implementation config.androidX.constraintlayout
+
+    testImplementation config.test.java_junit
+    androidTestImplementation config.test.junit
+    androidTestImplementation config.test.espresso
+
+    implementation config.lifecycle.extensions
+    implementation config.material
+}
