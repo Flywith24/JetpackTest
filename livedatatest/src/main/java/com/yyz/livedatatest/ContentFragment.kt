@@ -28,7 +28,7 @@ class ContentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_content, container, false)
-        mRedPointViewModel = ViewModelProviders.of(activity!!).get(RedPointViewModel::class.java)
+        mRedPointViewModel = ViewModelProviders.of(requireActivity()).get(RedPointViewModel::class.java)
 
         val textView = view.findViewById<TextView>(R.id.textView).apply {
             text = arguments?.getString(KEY)
