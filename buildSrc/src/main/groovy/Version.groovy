@@ -13,26 +13,30 @@ class Version {
 
 
     static dependencies = [
-            test     : [
+            test      : [
                     java_junit: "junit:junit:4.12",
                     junit     : "androidx.test.ext:junit:1.1.1",
                     espresso  : "androidx.test.espresso:espresso-core:3.2.0",
             ],
 
-            androidX : [
+            androidX  : [
                     appcompat       : "androidx.appcompat:appcompat:1.1.0",
                     constraintlayout: "androidx.constraintlayout:constraintlayout:1.1.3",
                     core            : "androidx.core:core-ktx:1.1.0"
             ],
 
-            lifecycle: [
+            lifecycle : [
                     extensions: "androidx.lifecycle:lifecycle-extensions:2.1.0",
                     savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
             ],
 
-            material : "com.google.android.material:material:1.0.0",
+            navigation: [
+                    fragment_ktx: "androidx.navigation:navigation-fragment-ktx:2.1.0",
+                    ui_ktx      : "androidx.navigation:navigation-ui-ktx:2.1.0"
+            ],
+            material  : "com.google.android.material:material:1.0.0",
 
-            kotlin   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+            kotlin    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     ]
 
