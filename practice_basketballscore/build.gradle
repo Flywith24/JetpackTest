@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion Version.compileSdkVersion
+    buildToolsVersion Version.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.yyz.databindingtest"
+        minSdkVersion Version.minSdkVersion
+        targetSdkVersion Version.targetSdkVersion
+        versionCode Version.versionCode
+        versionName Version.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        dataBinding {
+            enabled = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    def config = Version.dependencies
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation config.kotlin
+    implementation config.androidX.appcompat
+    implementation config.androidX.core
+    implementation config.androidX.constraintlayout
+
+    testImplementation config.test.java_junit
+    androidTestImplementation config.test.junit
+    androidTestImplementation config.test.espresso
+
+    implementation config.lifecycle.extensions
+    implementation config.material
+}
