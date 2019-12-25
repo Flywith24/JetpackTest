@@ -6,7 +6,7 @@ android {
     buildToolsVersion Version.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.yyz.databindingtest"
+        applicationId "com.yyz.ballscore"
         minSdkVersion Version.minSdkVersion
         targetSdkVersion Version.targetSdkVersion
         versionCode Version.versionCode
