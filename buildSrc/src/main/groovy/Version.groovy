@@ -26,8 +26,9 @@ class Version {
             ],
 
             lifecycle : [
-                    extensions: "androidx.lifecycle:lifecycle-extensions:2.1.0",
-                    savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
+                    extensions  : "androidx.lifecycle:lifecycle-extensions:2.1.0",
+                    livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0",
+                    savedstate  : "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
             ],
 
             navigation: [

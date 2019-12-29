@@ -41,4 +41,6 @@ dependencies {
     implementation config.room.ktx
     kapt config.room.compiler
     testImplementation config.room.testing
+
+    implementation config.lifecycle.livedata_ktx
 }

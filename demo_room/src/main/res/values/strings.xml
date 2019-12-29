@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Demo Room</string>
+    <string name="delete">delete</string>
+    <string name="insert">insert</string>
 </resources>
