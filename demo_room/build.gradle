@@ -40,4 +40,5 @@ dependencies {
     implementation config.room.runtime
     implementation config.room.ktx
     kapt config.room.compiler
+    testImplementation config.room.testing
 }

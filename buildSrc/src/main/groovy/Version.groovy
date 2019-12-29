@@ -38,6 +38,7 @@ class Version {
                     runtime : "androidx.room:room-runtime:$room_version",
                     compiler: "androidx.room:room-compiler:$room_version",
                     ktx     : "androidx.room:room-ktx:$room_version",
+                    testing : "androidx.room:room-testing:$room_version",
             ],
             material  : "com.google.android.material:material:1.0.0",
 
