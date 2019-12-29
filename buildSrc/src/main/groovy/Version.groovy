@@ -10,7 +10,7 @@ class Version {
     static versionName = '1.0.0'
 
     static kotlin_version = '1.3.61'
-
+    static room_version = "2.2.3"
 
     static dependencies = [
             test      : [
@@ -33,6 +33,11 @@ class Version {
             navigation: [
                     fragment_ktx: "androidx.navigation:navigation-fragment-ktx:2.1.0",
                     ui_ktx      : "androidx.navigation:navigation-ui-ktx:2.1.0"
+            ],
+            room      : [
+                    runtime : "androidx.room:room-runtime:$room_version",
+                    compiler: "androidx.room:room-compiler:$room_version",
+                    ktx     : "androidx.room:room-ktx:$room_version",
             ],
             material  : "com.google.android.material:material:1.0.0",
 

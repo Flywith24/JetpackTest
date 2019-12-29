@@ -1,4 +1,4 @@
-include ':buildSrc', ':demo_lifecycle',
+include ':buildSrc', ':demo_lifecycle', ':demo_room',
         ':demo_viewmodel',
         ':demo_livedata',
         ':demo_databinding',
