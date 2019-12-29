@@ -23,12 +23,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
     def config = Version.dependencies
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation config.kotlin
+    implementation config.fragment
     implementation config.androidX.appcompat
     implementation config.androidX.core
     implementation config.androidX.constraintlayout
@@ -43,4 +52,5 @@ dependencies {
     testImplementation config.room.testing
 
     implementation config.lifecycle.livedata_ktx
+    implementation config.lifecycle.viewmodel_ktx
 }

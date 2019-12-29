@@ -1,11 +1,10 @@
-package com.yyz.demo_room.dao
+package com.yyz.demo_room.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.yyz.demo_room.entity.User
 
 /**
  * @author yyz (杨云召)

@@ -26,9 +26,10 @@ class Version {
             ],
 
             lifecycle : [
-                    extensions  : "androidx.lifecycle:lifecycle-extensions:2.1.0",
-                    livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0",
-                    savedstate  : "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
+                    extensions   : "androidx.lifecycle:lifecycle-extensions:2.1.0",
+                    livedata_ktx : "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0",
+                    viewmodel_ktx: "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0",
+                    savedstate   : "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
             ],
 
             navigation: [
@@ -42,6 +43,7 @@ class Version {
                     testing : "androidx.room:room-testing:$room_version",
             ],
             material  : "com.google.android.material:material:1.0.0",
+            fragment  : "androidx.fragment:fragment-ktx:1.1.0",
 
             kotlin    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 

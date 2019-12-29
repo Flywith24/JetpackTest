@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.yyz.demo_room.dao.UserDao
-import com.yyz.demo_room.entity.User
+import com.yyz.demo_room.data.UserDao
+import com.yyz.demo_room.data.User
 
 /**
  * @author yyz (杨云召)
