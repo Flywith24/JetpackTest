@@ -51,6 +51,4 @@ dependencies {
     kapt config.room.compiler
     testImplementation config.room.testing
 
-    implementation config.lifecycle.livedata_ktx
-    implementation config.lifecycle.viewmodel_ktx
 }

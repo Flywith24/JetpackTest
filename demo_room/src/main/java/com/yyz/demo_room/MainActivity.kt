@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         textView = findViewById(R.id.textView)
         userViewModel.users.observe(this, Observer { list ->
             val builder = StringBuilder()
-            list.forEach() {
+            list.forEach {
                 builder.append("${it.uid} ${it.firstName} ${it.lastName} \n")
             }
             textView.text = builder.toString()
