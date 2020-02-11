@@ -11,6 +11,7 @@ class Version {
 
     static kotlin_version = '1.3.61'
     static room_version = "2.2.3"
+    static retrofit_version = '2.7.1'
 
     static dependencies = [
             test      : [
@@ -42,6 +43,11 @@ class Version {
                     ktx     : "androidx.room:room-ktx:$room_version",
                     testing : "androidx.room:room-testing:$room_version",
             ],
+            retrofit    : [
+                    retrofit      : "com.squareup.retrofit2:retrofit:$retrofit_version",
+                    converter_gson: "com.squareup.retrofit2:converter-gson:$retrofit_version"
+            ],
+            paging    : "androidx.paging:paging-runtime-ktx:2.1.1",
             material  : "com.google.android.material:material:1.0.0",
             fragment  : "androidx.fragment:fragment-ktx:1.1.0",
 
